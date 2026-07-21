@@ -6,7 +6,7 @@ function addTodo(todo) {
         id: nextId,
         text: todo,
         done: false
-    }
+    };
     nextId++;
     todos.push(newtodo);
 }
@@ -22,7 +22,7 @@ function complete(id) {
         return t.id === id;
     })
     if(!todo){
-        console.log("no id")
+        console.log("no id");
     } else{
     todo.done = true;
     }
